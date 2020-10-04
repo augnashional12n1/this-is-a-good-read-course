@@ -1,0 +1,16 @@
+title: This is a good read
+description: 'About  a guy from Georgia who dreams of winning the Masters '
+template:
+  repo: this-is-a-good-read-template
+  name: this-is-a-good-read
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
